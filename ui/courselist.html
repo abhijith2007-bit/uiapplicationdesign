@@ -1,0 +1,74 @@
+<html>
+     <head>
+        <title>
+            Student Course Enrollment
+        </title>
+        <link rel="stylesheet" href="./../css/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.html">Student Course System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses & Enrollments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courselist.html">List Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courseform.html">Add Course</a>
+                    </li>
+                </ul>
+                <span id="WelcomeMessage" class="navbar-brand mx-auto"></span>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  id="registerLink" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  id="loginLink" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                           <button class="btn btn-danger" id="logoutBtn" style="display:none;" onclick="logoutUser()">Logout</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <ul class="navbar-nav ms-auto">
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <h1 class="text-center">Courses List</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Course ID</th>
+                        <th>Course Name</th>
+                        <th>Duration</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="courseBody">
+                </tbody>
+        </div>
+        <div>
+            <span class="footer">All Rights Reserved 2026 Abhijith S</span>
+        </div>
+        <script src="./../js/script.js"></script>
+        <script src="./../js/courselist.js"></script>
+    </body>
+</html>
